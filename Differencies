@@ -1,0 +1,33 @@
+I got 2 strings from parser to excel like:
+
+    Mike#USA,sniper#1,soldier#8,tank#1
+    John#Nazi,soldier#18,medic#6,sniper#1
+
+This means:
+
+    Player1 - Mike
+    Base - USA
+    sniper 1
+    soldier 8
+    tank 1
+
+    Player2 - John
+    Base - Nazi
+    soldier 18
+    medic 6
+    sniper 1
+
+I need to compare 2 strings and show differencies with substraction. Snipers are at different places, but mutually excluded. Soldiers 8 vs 18, so they got -8 both sides. Tank - leave as is, because second player doesn`t have one. After that left medic of Player2 - add to 2 list.
+
+Correct output of differencies:
+
+    Mike
+    USA
+    tank 1
+
+    John
+    Nazi
+    soldier 10
+    medic 6
+
+Is it possible in VBA ?
